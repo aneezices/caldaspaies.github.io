@@ -1,0 +1,566 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@400;700;900&display=swap');
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Questrial', sans-serif;
+}
+
+ul,ol {
+    list-style: none;
+}
+
+p {
+    font-family: 'Ruda', sans-serif;
+}
+
+h1,h3,h4,h5 {
+    font-family: 'Questrial', sans-serif;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+/*LOGO DO WHATSAPP*/
+#flutuante a{
+    position: fixed;
+    right: 2%;
+    bottom: 0%;
+    transform: translateY(-50%);
+    display: block;
+    z-index: 9999;
+}
+
+#flutuante img:hover {
+    transition: 0.3s all;
+    transform: scale(1.1);
+}
+
+/*LINHA*/
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: #421A22;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+/*QUEM SOMOS*/
+#quem-somos {
+    display: flex;
+    background-color: #D9D9D9;
+    color: #343434;
+}
+
+#quem-somos h1 {
+    font-weight: 900;
+}
+
+#quem-somos h3 {
+    opacity: 0.8;
+    font-weight: normal;
+}
+
+#quem-somos h4 {
+    opacity: 0.9;
+    font-family: 'Ruda',sans-serif;
+    font-weight: 700;
+}
+
+#logo3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #B8B3B4;
+    border-radius: 30px;
+}
+
+/*PROBLEMA*/
+#problema {
+    display: flex;
+    background-color: #D9D9D9;
+    color: #421A22;
+}
+
+#problema h3 {
+    opacity: 0.8;
+    font-weight: 500;
+}
+
+#problema h4 {
+    opacity: 0.9;
+    font-weight: 500;
+}
+
+#problema h1 {
+    font-weight: 900;
+}
+
+#par4 {
+    display: flex;
+}
+
+.txt2, .txt3, #mensagem {
+    color: #404143;
+    background-color: #BCBCBC;
+    border-radius: 15px;
+    border: 1px solid #404143;
+}
+
+#btn {
+    color: #D9D9D9;
+    background-color: #421A22;
+    border: 2px solid #421A22;
+    border-radius: 20px;
+}
+
+#btn:hover {
+    cursor: pointer;
+    transition: 0.3s all;
+    transform: scale(1.1);
+}
+
+input:focus, textarea:focus {
+    outline: none; 
+}
+/*COMUNICAÇÃO 1*/
+#comunicacao1 {
+    background: 
+        linear-gradient(rgba(66, 26, 34, 0.9), rgba(66, 26, 34, 0.9)), 
+        url('imagens/businessman-signing-important-contract-papers 1.png'); 
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #D9D9D9;
+}
+
+#comunicacao1 h1 {
+    font-weight: 900;
+    color: #D9D9D9;
+}
+
+#comunicacao1 h3 {
+    font-weight: normal;
+    color: #A89B9E;
+}
+
+#comunicacao1 a {
+    color: #D9D9D9;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #D9D9D9;
+    border-radius: 30px;
+}
+
+#comunicacao1 a:hover {
+    transition: 0.3s all;
+    color: #421A22;
+    background-color: #D9D9D9;
+    transform: scale(1.1);
+}
+
+/*AVALIAÇÃO*/
+
+/*COMUNICAÇÃO 2*/
+#comunicacao2 {
+    display: flex;
+    background-color: #D9D9D9;
+}
+
+#comunicacao2 h3 {
+    font-weight: normal;
+    color: #421A22;
+    opacity: 0.8;
+}
+
+#comunicacao2 h1 {
+    font-weight: 900;
+    color: #421A22;
+}
+
+#comunicacao2 h5 {
+    font-weight: 900;
+    color: #421A22;
+}
+
+#comunicacao2 a {
+    color: #421A22;
+}
+
+#comunicacao2 a:hover {
+    transition: 0.3s all;
+    font-weight: bold;
+    transform: scale(1.1);
+}
+
+#comunicacao2 iframe {
+    border: 2;
+    border-radius: 5dvb;
+}
+
+.ctt2 {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (min-width: 320px) and (orientation: portrait) {
+    /*QUEM SOMOS*/
+    #quem-somos {
+        gap: 3dvh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10dvh 5dvw;
+    }
+
+    #quem-somos p {
+        font-size: 3.5dvh;
+        margin-bottom: 1.5dvh;
+        text-align: center;
+    }
+
+    #quem-somos h1 {
+        font-size: 8dvh;
+        text-align: center;
+    }
+
+    #quem-somos h3 {
+        font-size: 5dvh;
+        text-align: center;
+        margin: 2dvh 0;
+    }
+
+    #quem-somos h4 {
+        margin-bottom: 1.5dvh;
+        font-size: 4dvh;
+        text-align: center;
+        margin: 1dvh 0;
+    }
+
+    #quem-somos img {
+        width: 50dvw;
+        height: auto;
+    }
+
+    #logo3 {
+        justify-content: center;
+        align-items: center;
+        padding: 15dvh 15dvw;
+    }
+
+    /*PROBLEMA*/
+    #problema {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 3dvw;
+        padding-top: 10dvh;
+        padding-bottom: 10dvh;
+        padding-left: 3dvw;
+        padding-right: 5dvw;
+    }
+
+    #problema h1 {
+        font-size: 5dvh;
+        margin-bottom: 2dvh;
+        text-align: center;
+    }
+
+    #problema h3 {
+        font-size: 4dvh;
+        margin-bottom: 2dvh;
+        text-align: center;
+    }
+
+    #problema h4 {
+        font-size: 3dvh;
+        text-align: center;
+    }
+
+    #par4 {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .txt2 {
+        width: 75dvw;
+        height: 6.5dvh;
+        padding-left: 1dvw;
+        font-size: 3dvh;
+        margin: 1dvh 1dvw;
+    }
+
+    #mensagem {
+        width: 75dvw;
+        height: 6.5dvh;
+        padding-left: 1dvw;
+        padding-top: 3.5dvh;
+        padding-bottom: 15dvh;
+        font-size: 3dvh;
+        margin: 1dvh 1dvw;
+    }
+
+    .txt3 {
+        width: 36.5dvw;
+        height: 6.5dvh;
+        padding-left: 1dvw;
+        font-size: 3dvh;
+        margin: 1dvh 1dvw;
+    }
+
+    #btn {
+        width: 75dvw;
+        height: 6.5dvh;
+        font-size: 3dvh;
+        margin: 1dvh 1dvw;
+    }   
+    /*COMUNICAÇÃO 1*/
+    #comunicacao1 {
+        padding: 4dvh;
+        gap: 0.5dvw;
+    }
+
+    #comunicacao1 h1 {
+        font-size: 5dvh;
+    }
+
+    #comunicacao1 h3 {
+        font-size: 3.5dvh;
+    }
+
+    #comunicacao1 a {
+        font-size: 3dvh;
+        padding: 2dvh 2dvw;
+        gap: 1dvh;
+        margin-top: 2dvh;
+    }
+
+    #comunicacao1 img {
+        height: 5dvh;
+    }
+    /*COMUNICAÇÃO 2*/
+    #comunicacao2 {
+        width: 100dvw;
+        height: auto;
+        padding: 5dvh 5dvw;
+        gap: 2dvw;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #comunicacao2 h3 {
+        font-size: 4dvh;
+        margin-bottom: 0.3dvh;
+        text-align: center;
+    }
+
+    #comunicacao2 h1 {
+        font-size: 6dvh;
+        margin-bottom: 1dvh;
+        text-align: center;
+    }
+
+    #comunicacao2 h5 {
+        font-size: 3.5dvh;
+        margin-bottom: 1dvh;
+        margin-top: 1dvh;
+        text-align: center;
+    }
+
+    #comunicacao2 a {
+        font-size: 3dvh;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #comunicacao2 img {
+        width: 4dvw;
+        height: 4dvh;
+    }
+
+    #comunicacao2 iframe {
+        height: 60dvh;
+        width: 85dvw;
+    }
+}
+
+@media screen and (min-width: 768px) and (orientation: landscape) {
+    /*QUEM SOMOS*/
+    #quem-somos {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 3dvw;
+        padding-top: 10dvh;
+        padding-bottom: 10dvh;
+        padding-left: 3dvw;
+        padding-right: 5dvw;
+    }
+
+    #quem-somos p {
+        font-size: 3.5dvh;
+        margin-bottom: 1.5dvh;
+    }
+
+    #quem-somos h1 {
+        font-size: 7dvh;
+    }
+
+    #quem-somos h3 {
+        font-size: 5dvh;
+    }
+
+    #quem-somos h4 {
+        margin-bottom: 1.5dvh;
+        font-size: 4dvh;
+    }
+
+    #quem-somos img {
+        width: 35dvw;
+        height: 35dvh;
+    }
+
+    #logo3 {
+        align-items: center;
+        padding: 25dvh 3dvw;
+    }
+
+    /*PROBLEMA*/
+    #problema {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 3dvw;
+        padding-top: 10dvh;
+        padding-bottom: 10dvh;
+        padding-left: 3dvw;
+        padding-right: 5dvw;
+    }
+
+    #problema h1 {
+        font-size: 5dvh;
+        margin-bottom: 2dvh;
+    }
+
+    #problema h3 {
+        font-size: 4dvh;
+        margin-bottom: 2dvh;
+    }
+
+    #problema h4 {
+        font-size: 3.5dvh;
+    }
+
+    #formulario {
+        width: 40dvw;
+    }
+
+    #par4 {
+        flex-direction: row;
+    }
+
+    .txt2 {
+        width: 35dvw;
+        height: 6.5dvh;
+        padding-left: 1dvw;
+        font-size: 3dvh;
+        margin: 1dvh 1dvw;
+    }
+
+    #mensagem {
+        width: 35dvw;
+        height: 6.5dvh;
+        padding-left: 1dvw;
+        padding-top: 3.5dvh;
+        padding-bottom: 15dvh;
+        font-size: 3dvh;
+        margin: 1dvh 1dvw;
+    }
+
+    .txt3 {
+        width: 16.5dvw;
+        height: 6.5dvh;
+        padding-left: 1dvw;
+        font-size: 3dvh;
+        margin: 1dvh 1dvw;
+    }
+
+    #btn {
+        width: 35dvw;
+        height: 6.5dvh;
+        font-size: 3dvh;
+        margin: 1dvh 1dvw;
+    }   
+
+    /*COMUNICAÇÃO 1*/
+    #comunicacao1 {
+        padding: 6dvh;
+        gap: 0.5dvw;
+    }
+
+    #comunicacao1 h1 {
+        font-size: 5dvh;
+    }
+
+    #comunicacao1 h3 {
+        font-size: 3.7dvh;
+    }
+
+    #comunicacao1 a {
+        font-size: 3.5dvh;
+        padding: 1dvh 2dvw;
+        gap: 1.5dvh;
+        margin-top: 2dvh;
+    }
+
+    #comunicacao1 img {
+        height: 8dvh;
+    }
+    /*COMUNICAÇÃO 2*/
+    #comunicacao2 {
+        padding: 5dvb;
+        gap: 2dvw;
+    }
+
+    #comunicacao2 h1 {
+        font-size: 6dvh;
+        margin-bottom: 2dvh;
+    }
+
+    #comunicacao2 h3 {
+        font-size: 4dvh;
+    }
+
+    #comunicacao2 h5 {
+        font-size: 3.5dvh;
+        margin: 1.5dvh 0;
+    }
+
+    #comunicacao2 a {
+        font-size: 3.5dvh;
+    }
+
+    #comunicacao2 img {
+        width: 4dvw;
+        height: 4dvh;
+    }
+
+    #comunicacao2 iframe {
+        height: 70dvh;
+        width: 50dvw;
+    }
+}

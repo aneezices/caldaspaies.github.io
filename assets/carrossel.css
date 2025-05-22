@@ -1,0 +1,258 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@400;700;900&display=swap');
+
+/*ÍNICIO*/
+#inicio {
+    background: 
+            linear-gradient(rgba(66, 26, 34, 0.9), rgba(66, 26, 34, 0.9)), 
+            url('image\ 5.png'); 
+        background-blend-mode: multiply;
+        background-size: cover;
+        background-position: center;
+    
+    color: #D9D9D9;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#inicio nav {
+    background: transparent;
+    pointer-events: auto;
+    display: flex;
+    border: 2px solid #D9D9D9;
+    border-radius: 10dvb;
+}
+
+#inicio nav a {
+    background-color: #D9D9D9;
+    border: 2px solid #D9D9D9;
+    border-radius: 10dvb;
+}
+
+#inicio nav a:hover{
+    transition: 0.3s all;
+    transform: scale(1.1);
+}
+
+.carrossel-container {
+    width: 100dvw;
+    height: 100dvh;
+    overflow: hidden;
+    position: relative;
+    flex: 1 1 auto;
+    display: flex;
+}
+
+.carrossel {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrossel a {
+    color: #D9D9D9;
+    font-family: 'Ruda', sans-serif;
+}
+
+.carrossel p,h1,h3,h4 {
+    text-align: justify;
+}
+
+.carrossel h4 {
+    font-weight: normal;
+    opacity: 0.8;
+}
+
+.carrossel h3{
+    font-weight: normal;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: row;
+}
+
+.slide {
+    width: 100vw;
+    height: 100%;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.ctt1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid #D9D9D9;
+    border-radius: 10dvb;
+}
+
+.ctt1:hover {
+    transition: 0.3s all;
+    background-color: #D9D9D9;
+    color: #421A22;
+    font-weight: bold;
+    border-radius: 30px;
+    transform: scale(1.1);
+}
+
+@media screen and (min-width: 320px) and (orientation: portrait) {
+    #inicio {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #inicio nav {
+        margin-bottom: 3dvh;
+        top: 50dvh;
+        flex-direction: row;
+    }
+
+    #inicio nav a {
+        margin: 1dvh 1dvw;
+        width: 3dvw;
+        height: 3dvh;
+    }
+
+    .carrossel a {
+        font-size: 3dvh;
+        text-align: center;
+    }
+
+    .carrossel p,ol {
+        font-size: 3.5dvh;
+        margin: 1dvh 5dvw;
+        text-align: center;
+    }
+
+    .carrossel h1 {
+        font-size: 7dvh;
+        margin: 0.5dvh 1.5dvw;
+        text-align: center;
+    }
+
+    .carrossel h3 {
+        gap: 1dvw;
+        font-size: 3dvh;
+        margin-top: 3dvh;
+        margin-bottom: 5dvh;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }   
+
+    .carrossel h4 {
+        font-size: 4dvh;
+        margin-bottom: 2dvh;
+        text-align: center;
+    }
+
+    .carrossel aside {
+        margin-left: 1dvw;
+    }
+
+    .img {
+        display: none;
+    }
+
+    .call {
+        height: 3dvh;
+    }
+
+    .ctt1 {
+        gap: 3dvw;
+        padding: 1.5dvh 1dvw;
+        margin: 0dvh 17dvw;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
+
+    .ctt1 img {
+        height: 5dvh;
+    }
+}
+
+@media screen and (min-width: 768px) and (orientation: landscape) {
+    /*ÍNICIO*/
+    #inicio {
+        height: 100dvh;
+        gap: 2dvw;
+        padding: 2dvh 2dvw;
+    }
+
+    #inicio nav {
+        flex-direction: column;
+    }
+
+    #inicio nav a {
+        margin: 1dvh 0.7dvw;
+        width: 1.5dvw;
+        height: 3dvh;
+    }
+
+    .carrossel a {
+        font-size: 3dvh;
+    }
+
+    .carrossel p,ol {
+        font-size: 3.3dvh;
+        margin-top: 1dvh;
+    }
+
+    .carrossel h1 {
+        font-size: 6dvh;
+        margin-bottom: 1dvh;
+    }
+
+    .carrossel h3 {
+        gap: 0.5dvw;
+        font-size: 3.5dvh;
+        margin-top: 1dvh;
+        margin-bottom: 1dvh;
+        text-align: left;
+    }   
+
+    .carrossel h4 {
+        font-size: 4.5dvh;
+        margin-bottom: 1dvh;
+    }
+
+    .carrossel aside {
+        margin-left: 2dvw;
+    }
+
+    .slide {
+        width: 99%;
+        padding: 1dvh 1dvw;
+    }
+
+    .img {
+        width: 30dvw;
+        height: 60dvh;
+    }
+
+    .call {
+        height: 3.5dvh;
+    }
+
+    .ctt1 {
+        gap: 1.5dvw;
+        padding: 1dvh 1dvw;
+        margin: 2dvh 10dvw;
+    }
+
+    .ctt1 img {
+        height: 7.5dvh;
+    }
+}
